@@ -8,4 +8,4 @@ Custom theme for Gogo08 website using WordPress.
 - [Twitch](https://www.twitch.tv/gogo08190/)
 - [Discord](https://discord.gg/cVEMguY)
 - [GitHub](https://github.com/Gogo08190)
-- [Website](https://gogo08190.fr)
+- [Website](https://gogo08.fr)
