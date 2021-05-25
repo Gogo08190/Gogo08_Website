@@ -1,0 +1,22 @@
+/* Global
+================================================ */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+  font-weight: normal;
+  line-height: 1.5;
+  color: black;
+}
+
+a:focus {
+  outline:0 !important;
+}
+
+#wrapper {
+  position: relative;
+  height: 100%;
+}

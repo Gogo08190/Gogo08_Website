@@ -1,0 +1,16 @@
+/*  Variables
+================================================ */
+
+$transition: all 0.2s ease-in-out;
+
+// Mixin
+@mixin placeholder {
+  ::placeholder { @content; }
+  :-ms-input-placeholder { @content; }
+  ::-ms-input-placeholder { @content; }
+}
+
+@mixin selection {
+  ::-moz-selection { @content; }
+  ::selection { @content; }
+}
