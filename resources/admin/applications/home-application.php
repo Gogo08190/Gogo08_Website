@@ -29,14 +29,15 @@ function custom_page_home() {
 		remove_post_type_support('page','comments');
 		remove_post_type_support('page','excerpt' );
 		remove_post_type_support('page','trackbacks');
+		remove_post_type_support('page','editor');
 		remove_post_type_support('page','revisions');
 	}
 }
 
 Metabox::make('Home', 'page')
 	->add(new Section('top', 'Haut de la page', [
-	    Field::text('video', ['label' => 'Vidéo']),
-			Field::media('animation', ['label' => 'Animation', 'type'  => 'application']),
+	    Field::textarea('title', ['label' => 'Titre']),
+			Field::textarea('desc', ['label' => 'Description']),
 	]))
 	->setTemplate('home')
 	->setTitle('Contenu de la page')

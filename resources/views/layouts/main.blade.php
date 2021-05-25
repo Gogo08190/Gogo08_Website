@@ -9,6 +9,7 @@
 		@head
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/791da63d6e.js" crossorigin="anonymous"></script>
 		@yield('javascriptheader')
 	</head>
 
