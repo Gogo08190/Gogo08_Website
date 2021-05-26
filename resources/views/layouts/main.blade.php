@@ -37,5 +37,7 @@
 
 		@footer
 		@yield('javascript')
+
+		<script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.15/dist/mailgo.min.js"></script>
 	</body>
 </html>
