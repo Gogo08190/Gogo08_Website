@@ -1,7 +1,7 @@
 <footer id="page-footer">
   <section id="prefooter">
     <div class="uk-container uk-container-xsmall uk-text-center animate__animated animate__bounceInUp">
-      <div class="social uk-grid-match uk-child-width-1-6@m uk-child-width-1-3@s" data-uk-grid>
+      <div class="social uk-child-width-expand" data-uk-grid>
         <div><a href="{!! get_option('th_youtube') !!}" target="_blank" class="social_icon youtube shake-slow"><i class="fab fa-youtube"></i></a></div>
         <div><a href="{!! get_option('th_twitch') !!}" target="_blank" class="social_icon twitch shake-slow"><i class="fab fa-twitch"></i></a></div>
         <div><a href="{!! get_option('th_discord') !!}" target="_blank" class="social_icon discord shake-slow"><i class="fab fa-discord"></i></a></div>
