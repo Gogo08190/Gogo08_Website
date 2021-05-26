@@ -1,7 +1,7 @@
 <header id="page-header">
   <div id="prenav" class="uk-visible@m">
     <div class="uk-container">
-      <div class="uk-align-right uk-navbar-right">
+      <div class="uk-align-right uk-navbar-right animate__animated animate__bounceInDown">
         <ul>
             <li class="social"><a href="{!! get_option('th_youtube') !!}" target="_blank" class="social_icon youtube"><i class="fab fa-youtube"></i></a></li>
             <li class="social"><a href="{!! get_option('th_twitch') !!}" target="_blank" class="social_icon twitch"><i class="fab fa-twitch"></i></a></li>

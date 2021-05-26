@@ -79,6 +79,11 @@ header#page-header #nav {
 
 header#page-header #nav img {
   width: 8rem;
+  transition: transform 1s ease-in-out;
+}
+
+header#page-header #nav img:hover {
+  transform: rotate(360deg);
 }
 
 header#page-header #nav .uk-navbar-item .menu {
@@ -178,6 +183,7 @@ header#page-header #nav .uk-navbar-right a:hover {
 #page-footer #prefooter .social > div a {
   color: white;
   font-size: 5rem;
+  text-decoration: none;
 }
 
 #page-footer #prefooter .social > div a:hover {
