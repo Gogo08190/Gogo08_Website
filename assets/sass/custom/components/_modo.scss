@@ -1,0 +1,40 @@
+/* Liste Modos
+================================================ */
+
+.list-modos {
+  padding-top: 5rem;
+
+  .modos {
+    >div {
+      img {
+        height: 240px;
+        object-fit: contain;
+      }
+
+      h3 {
+        margin-top: 10px;
+        @extend %texte;
+        color: $turquoise;
+        font-size: 3rem;
+      }
+
+      p {
+        @extend %texte;
+        margin-top: 0;
+      }
+
+      .modo_social {
+        padding-bottom: 2rem;
+
+        a {
+          font-size: 3rem;
+          color: white;
+
+          &:hover {
+            color: $turquoise;
+          }
+        }
+      }
+    }
+  }
+}

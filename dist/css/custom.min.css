@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;
 
-400;500;700);/*  Theme
+400;500;700);@import url(https://use.typekit.net/ggx5veo.css);/*  Theme
 ================================================ */
 
 /*  Fonts
@@ -11,9 +11,18 @@
 
 .sst-status-text-live,
 .sst-status-text-offline,
-#page-footer #copyright p {
+#page-footer #copyright p,
+.list-modos .modos > div h3,
+.list-modos .modos > div p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.title h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
   color: white;
 }
 
@@ -30,6 +39,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: black;
+  background-color: #2A3740;
 }
 
 a:focus {
@@ -164,6 +174,10 @@ header#page-header #nav .uk-navbar-right a:hover {
 /* Home
 ================================================ */
 
+#wrapper.home #modo {
+  padding: 5rem 0;
+}
+
 /*  Page
 ================================================ */
 
@@ -290,5 +304,60 @@ header#page-header #nav .uk-navbar-right a:hover {
   text-align: center;
   padding: 1rem 1.5rem;
   text-decoration: none;
+}
+
+/* Titles
+================================================ */
+
+.title h2 span {
+  position: relative;
+}
+
+.title h2 span::after {
+  display: block;
+  content: '';
+  background-color: #43D9BD;
+  height: 1rem;
+  width: 9rem;
+  position: absolute;
+  right: 0;
+  bottom: -1rem;
+  z-index: 1;
+}
+
+/* Liste Modos
+================================================ */
+
+.list-modos {
+  padding-top: 5rem;
+}
+
+.list-modos .modos > div img {
+  height: 240px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.list-modos .modos > div h3 {
+  margin-top: 10px;
+  color: #43D9BD;
+  font-size: 3rem;
+}
+
+.list-modos .modos > div p {
+  margin-top: 0;
+}
+
+.list-modos .modos > div .modo_social {
+  padding-bottom: 2rem;
+}
+
+.list-modos .modos > div .modo_social a {
+  font-size: 3rem;
+  color: white;
+}
+
+.list-modos .modos > div .modo_social a:hover {
+  color: #43D9BD;
 }
 

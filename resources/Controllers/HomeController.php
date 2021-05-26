@@ -27,6 +27,9 @@ class HomeController extends BaseController
         // Haut de page
         'titre' => $this->titre,
         'desc' => $this->desc,
+
+        // Post
+        'list_modo' => $model->get_modo(),
       ]);
     }
 }
