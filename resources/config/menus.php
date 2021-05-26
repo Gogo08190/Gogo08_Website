@@ -7,5 +7,6 @@
  * @see https://developer.wordpress.org/reference/functions/register_nav_menus/
  */
 return [
-    'nav' => __('Navigation', THEME_TD),
+   'nav' => __('Navigation', THEME_TD),
+   'nav-mobile' => __('Navigation mobile', THEME_TD),
 ];

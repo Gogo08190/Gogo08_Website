@@ -25,6 +25,12 @@
 			</main>
 			@include('layouts.footer')
 		</div>
+		<div id="menu-mobile" data-uk-offcanvas="mode: push">
+	    <div class="uk-offcanvas-bar">
+	      <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+				{!! wp_nav_menu(['theme_location' => 'nav-mobile', 'container' => false, 'menu_id' => 'mobile-nav']) !!}
+	    </div>
+	  </div>
 
 		@footer
 		@yield('javascript')

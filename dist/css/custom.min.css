@@ -9,6 +9,8 @@
 /* Montserrat */
 
 
+.sst-status-text-live,
+.sst-status-text-offline,
 #page-footer #copyright p {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
@@ -39,8 +41,124 @@ a:focus {
   height: 100%;
 }
 
+.sst-status-wrapper {
+  border: 2px solid #6441A4;
+}
+
+.sst-twitch-logo-wrapper {
+  border: 2px solid #6441A4;
+}
+
+.sst-status-text-live,
+.sst-status-text-offline {
+  font-size: 1.5rem;
+}
+
 /* Header
 ================================================ */
+
+header#page-header #prenav {
+  padding: 1rem 0;
+  background-color: #2A3740;
+  border-bottom: 2px solid #43D9BD;
+}
+
+header#page-header #prenav .social a {
+  font-size: 2rem;
+}
+
+header#page-header #prenav .social a:hover {
+  color: #43D9BD;
+}
+
+header#page-header #nav {
+  box-shadow: -5px 1px 5px #43D9BD;
+  padding: 1rem 0;
+  background-color: #2A3740;
+}
+
+header#page-header #nav img {
+  width: 8rem;
+}
+
+header#page-header #nav .uk-navbar-item .menu {
+  overflow: inherit;
+}
+
+header#page-header #nav .uk-navbar-item .menu .menu-item {
+  position: relative;
+}
+
+header#page-header #nav .uk-navbar-item .menu .menu-item.current-menu-item a {
+  color: #43D9BD;
+}
+
+header#page-header #nav .uk-navbar-left .uk-logo {
+  max-width: 250px;
+}
+
+header#page-header #nav .uk-navbar-left .uk-navbar-toggle-icon {
+  color: #43D9BD;
+}
+
+header#page-header #nav .uk-navbar-right a {
+  position: relative;
+  font-weight: 500;
+  max-width: 250px;
+  display: inline-block;
+}
+
+header#page-header #nav .uk-navbar-right a:hover {
+  color: #43D9BD;
+}
+
+#menu-mobile .uk-offcanvas-bar {
+  padding: 0;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #2A3740;
+}
+
+#menu-mobile .uk-offcanvas-bar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#menu-mobile .uk-offcanvas-bar ul a {
+  text-decoration: none;
+  color: white;
+}
+
+#menu-mobile .uk-offcanvas-bar #mobile-nav {
+  flex-grow: 1;
+  list-style: none;
+  margin: 2rem 0;
+}
+
+#menu-mobile .uk-offcanvas-bar #mobile-nav > li.current-menu-item {
+  background-color: #43D9BD;
+}
+
+#menu-mobile .uk-offcanvas-bar #mobile-nav > li.current-menu-item a {
+  color: white;
+}
+
+#menu-mobile .uk-offcanvas-bar #mobile-nav > li a {
+  padding: 1.5rem 3rem;
+  display: block;
+  background-color: transparent;
+  background: linear-gradient(to right, #43D9BD 50%, transparent 50%);
+  background-position: right bottom;
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  transition: .2s;
+}
+
+#menu-mobile .uk-offcanvas-bar #mobile-nav > li a:hover {
+  background-position: left bottom;
+}
 
 /* Home
 ================================================ */
@@ -93,4 +211,56 @@ a:focus {
 
 /*  Components
 ================================================ */
+
+/* Navigation
+================================================ */
+
+.uk-navbar-item ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.uk-navbar-item li {
+  display: inline;
+  max-width: 150px;
+}
+
+.uk-navbar-item li a {
+  color: white;
+  font-size: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+.uk-navbar-left,
+.uk-navbar-right {
+  margin-bottom: 0;
+}
+
+.uk-navbar-left ul,
+.uk-navbar-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.uk-navbar-left li,
+.uk-navbar-right li {
+  display: inline;
+}
+
+.uk-navbar-left li a,
+.uk-navbar-right li a {
+  color: white;
+  font-size: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
 

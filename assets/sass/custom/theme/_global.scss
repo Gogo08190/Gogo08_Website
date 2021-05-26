@@ -20,3 +20,16 @@ a:focus {
   position: relative;
   height: 100%;
 }
+
+.sst-status-wrapper {
+  border: 2px solid #6441A4;
+}
+
+.sst-twitch-logo-wrapper {
+  border: 2px solid #6441A4;
+}
+
+.sst-status-text-live, .sst-status-text-offline {
+  @extend %texte;
+  font-size: 1.5rem;
+}
