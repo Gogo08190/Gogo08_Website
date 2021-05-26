@@ -2,5 +2,43 @@
 ================================================ */
 
 #page-footer {
+  margin-top: 5rem;
 
+  #prefooter {
+    padding: 2.5rem 0 2.5rem 0;
+    background-color: $dark;
+    border-top: 2px solid $turquoise;
+
+    .social {
+      >div {
+        a {
+          color: white;
+          font-size: 5rem;
+
+          &:hover {
+            color: $light_turquoise;
+          }
+        }
+      }
+    }
+  }
+
+  #copyright {
+    padding: 1rem 0 1rem 0;
+    background-color: $dark;
+    border-top: 2px solid $turquoise;
+
+    p {
+      @extend %texte;
+      font-size: 1.5rem;
+      display: inline-block;
+      position: relative;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      a {
+        color: $light_turquoise;
+      }
+    }
+  }
 }

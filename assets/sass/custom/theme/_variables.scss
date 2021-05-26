@@ -14,3 +14,9 @@ $transition: all 0.2s ease-in-out;
   ::-moz-selection { @content; }
   ::selection { @content; }
 }
+
+%texte {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: white;
+}
