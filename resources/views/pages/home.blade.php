@@ -5,6 +5,23 @@
 @endsection
 
 @section('content')
+	<section id="top">
+		<div class="uk-container uk-text-center">
+			<div class="title">
+				<h2><span>Le live</span></h2>
+			</div>
+			<div class="twitch_player">
+				<iframe src="https://player.twitch.tv/?channel=gogo08190&parent=gogo08.fr" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="742"></iframe>
+				<iframe
+				  id="chat_embed"
+				  src="https://www.twitch.tv/embed/gogo08190/chat?parent=gogo08.fr"
+				  height="500"
+				  width="350">
+				</iframe>
+			</div>
+		</div>
+	</section>
+
 	<section id="modo">
 		<div class="uk-container uk-text-center">
 			<div class="title">
@@ -29,7 +46,7 @@
 							<div><a href="{{ $item['twitter'] }}" target="_blank" class="social_icon"><i class="fab fa-twitter"></i></a></div>
 							@endif
 							@if($item['github'])
-							<div><a href="{{ $item['twitter'] }}" target="_blank" class="social_icon"><i class="fab fa-github"></i></a></div>
+							<div><a href="{{ $item['github'] }}" target="_blank" class="social_icon"><i class="fab fa-github"></i></a></div>
 							@endif
 						</div>
 					</div>
