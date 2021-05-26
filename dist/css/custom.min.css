@@ -93,10 +93,6 @@ header#page-header #nav .uk-navbar-item .menu .menu-item.current-menu-item a {
   color: #43D9BD;
 }
 
-header#page-header #nav .uk-navbar-left .uk-logo {
-  max-width: 250px;
-}
-
 header#page-header #nav .uk-navbar-left .uk-navbar-toggle-icon {
   color: #43D9BD;
 }
@@ -208,6 +204,32 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 /*  Responsive
     ================================================ */
+
+@media screen and (min-width: 1920px) {
+  #wrapper {
+    width: 100% !important;
+    transform: none !important;
+    transform-origin: center;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  html,
+  body {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+
+  .sst-main-wrapper {
+    display: none !important;
+  }
+}
 
 /*  Components
 ================================================ */

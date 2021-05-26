@@ -1,2 +1,27 @@
 /*  Responsive
     ================================================ */
+
+@media screen and (min-width : 1920px) {
+  // Global
+  #wrapper {
+    width: 100% !important;
+    transform: none !important;
+    transform-origin: center;
+  }
+}
+
+@media screen and (max-width : 1230px) {
+  html, body {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width : 959px) {
+  html, body {
+    font-size: 50%;
+  }
+
+  .sst-main-wrapper {
+    display: none !important;
+  }
+}
