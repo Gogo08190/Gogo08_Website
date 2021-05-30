@@ -56,4 +56,22 @@ class Post extends Model
     }
     return $partenaires;
   }
+
+  public function get_playlist() {
+    $args = array(
+      'post_type' => 'slug-playlist',
+      'post_status' => 'publish',
+      'posts_per_page' => -1,
+      'order' => 'DESC'
+    );
+
+    $posts = new WP_Query($args);
+
+    $playlist = array();
+    foreach ($posts->get_posts() as $key => $val) {
+      $playlist[$key]['title'] = get_the_title($val->ID);
+      $playlist[$key]['url'] = get_post_meta($val->ID, 'th_url', true);
+    }
+    return $playlist;
+  }
 }

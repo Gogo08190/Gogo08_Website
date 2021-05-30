@@ -8,7 +8,7 @@
 	<section id="top" data-aos="fade-up">
 		<div class="uk-container uk-text-center">
 			<div class="title">
-				<h2><span>Le Live</span></h2>
+				<h1><span>Le Live</span></h1>
 			</div>
 			<div class="twitch_player">
 				<iframe src="https://player.twitch.tv/?channel=gogo08190&parent=gogo08.fr" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="742"></iframe>

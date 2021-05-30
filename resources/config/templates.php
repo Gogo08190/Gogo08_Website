@@ -10,4 +10,5 @@
  */
 return [
   'home' => [__('Accueil', THEME_TD), ['page']],
+  'video' => [__('Vidéo', THEME_TD), ['page']],
 ];

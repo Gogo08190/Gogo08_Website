@@ -8,3 +8,4 @@
  */
 
 Route::get('template', ['home', 'uses' => 'HomeController@index']);
+Route::get('template', ['video', 'uses' => 'VideoController@index']);

@@ -1,15 +1,15 @@
 <?php
 
 /**
- * home-application.php - Custom code template home.
+ * video-application.php - Custom code template video.
  */
 
 use Themosis\Support\Facades\Field;
 use Themosis\Support\Facades\Metabox;
 use Themosis\Support\Section;
 
-add_action('init', 'custom_page_home');
-function custom_page_home() {
+add_action('init', 'custom_page_video');
+function custom_page_video() {
 	// Get the Post ID.
 	if(isset($_GET['post']))
 		$post_id = $_GET['post'];
@@ -23,7 +23,7 @@ function custom_page_home() {
 	$template_file = get_post_meta($post_id, '_wp_page_template', true);
 
 	// Do something for the template
-	if($template_file == "home") {
+	if($template_file == "video") {
 		remove_post_type_support('page','author');
 		remove_post_type_support('page','custom-fields');
 		remove_post_type_support('page','comments');
@@ -34,11 +34,15 @@ function custom_page_home() {
 	}
 }
 
-Metabox::make('Home', 'page')
+Metabox::make('page_video', 'page')
 	->add(new Section('top', 'Haut de la page', [
 	    Field::textarea('titre', ['label' => 'Titre']),
-			Field::textarea('desc', ['label' => 'Description']),
+			Field::text('shortcode', ['label' => 'Shortcode']),
 	]))
-	->setTemplate('home')
+
+	->add(new Section('playlist', 'Playlist', [
+	    Field::textarea('titre_playlist', ['label' => 'Titre']),
+	]))
+	->setTemplate('video')
 	->setTitle('Contenu de la page')
 	->set();

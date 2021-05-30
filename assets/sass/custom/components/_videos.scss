@@ -1,0 +1,45 @@
+/* Vidéos / Playlist
+================================================ */
+
+.youtube_video {
+  .fts-yt-large {
+    padding-bottom: 5rem;
+
+    .fts-fluid-videoWrapper {
+      border: 5px solid $turquoise;
+      box-shadow: 0px 0px 50px $turquoise;
+    }
+  }
+
+  .fts-master-youtube-wrap {
+    .fts-youtube-popup-gallery {
+      text-align: center;
+
+      .slicker-youtube-placeholder {
+        margin: 10px !important;
+        height: 174px !important;
+        width: calc(27% - 2px) !important;
+
+        a {
+          border: 3px solid $turquoise;
+
+          &:hover {
+
+            &::before {
+              top: 35%;
+              color: $turquoise;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_playlist {
+  .playlist {
+    iframe {
+      border: 3px solid $turquoise;
+    }
+  }
+}
