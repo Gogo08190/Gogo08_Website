@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;
 
-400;500;700);@import url(https://use.typekit.net/ggx5veo.css);/*  Theme
+400;500;700);@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);@import url(https://use.typekit.net/ggx5veo.css);/*  Theme
 ================================================ */
 
 /*  Fonts
@@ -11,10 +11,13 @@
 
 .sst-status-text-live,
 .sst-status-text-offline,
+#wrapper.home #top .info p,
 #page-footer #copyright p,
 .list-modos .modos > div h3,
-.list-modos .modos > div p {
-  font-family: 'Montserrat', sans-serif;
+.list-modos .modos > div p,
+.partenaires_slider h3,
+.partenaires_slider p {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   color: white;
 }
@@ -24,6 +27,53 @@
   font-size: 5rem;
   font-weight: bold;
   color: white;
+}
+
+#wrapper.home #top .info .button .uk-button,
+.partenaires_slider .button .uk-button {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: none;
+  background-color: #2A3740;
+  background: linear-gradient(to right, #43D9BD 50%, #2A3740 50%);
+  background-position: right bottom;
+  background-size: 220% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid #43D9BD;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px #43D9BD;
+}
+
+#wrapper.home #top .info .button .uk-button i,
+.partenaires_slider .button .uk-button i {
+  position: relative;
+  left: -10px;
+  font-size: 2rem;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  vertical-align: middle;
+}
+
+#wrapper.home #top .info .button .uk-button:hover,
+.partenaires_slider .button .uk-button:hover,
+#wrapper.home #top .info .button .uk-button:focus,
+.partenaires_slider .button .uk-button:focus {
+  background-position: left bottom;
+  border: 2px solid #43D9BD;
+  color: white;
+}
+
+#wrapper.home #top .info .button .uk-button:hover i,
+.partenaires_slider .button .uk-button:hover i,
+#wrapper.home #top .info .button .uk-button:focus i,
+.partenaires_slider .button .uk-button:focus i {
+  opacity: 1;
+  left: 0;
 }
 
 /* Global
@@ -174,7 +224,23 @@ header#page-header #nav .uk-navbar-right a:hover {
 /* Home
 ================================================ */
 
+#wrapper.home #top {
+  padding: 5rem 0;
+}
+
+#wrapper.home #top .twitch_player {
+  padding-bottom: 3rem;
+}
+
+#wrapper.home #top .info p {
+  font-size: 2rem;
+}
+
 #wrapper.home #modo {
+  padding: 5rem 0;
+}
+
+#wrapper.home #partenaires {
   padding: 5rem 0;
 }
 
@@ -340,6 +406,7 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 .list-modos .modos > div h3 {
   margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
   color: #43D9BD;
   font-size: 3rem;
 }
@@ -359,5 +426,42 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 .list-modos .modos > div .modo_social a:hover {
   color: #43D9BD;
+}
+
+/* Liste Partenaires
+================================================ */
+
+.partenaires_slider {
+  padding-top: 5rem;
+}
+
+.partenaires_slider h3 {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #43D9BD;
+  font-size: 3rem;
+}
+
+.partenaires_slider p {
+  padding: 3rem 0;
+}
+
+.partenaires_slider p strong {
+  color: #43D9BD;
+}
+
+.partenaires_slider .uk-dotnav * * {
+  border: 1px solid #43D9BD;
+  width: 15px;
+  height: 15px;
+}
+
+.partenaires_slider .uk-dotnav * *:focus,
+.partenaires_slider .uk-dotnav * *:hover {
+  background-color: #43D9BD;
+}
+
+.partenaires_slider .uk-dotnav .uk-active * {
+  background-color: #43D9BD;
 }
 

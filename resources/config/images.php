@@ -15,5 +15,5 @@
  *                            to the media custom field. If string, used as the display name ;)
  */
 return [
-    'themosis' => [500, 500, false],
+    'partenaire' => [360, 120, false],
 ];

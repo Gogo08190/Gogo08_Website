@@ -30,6 +30,7 @@ class HomeController extends BaseController
 
         // Post
         'list_modo' => $model->get_modo(),
+        'list_partenaires' => $model->get_partenaires(),
       ]);
     }
 }

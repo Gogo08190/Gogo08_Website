@@ -2,7 +2,31 @@
 ================================================ */
 
 #wrapper.home {
+  #top {
+    padding: 5rem 0;
+
+    .twitch_player {
+      padding-bottom: 3rem;
+    }
+
+    .info {
+      p {
+        @extend %texte;
+        font-size: 2rem;
+      }
+      .button {
+        .uk-button {
+          @extend %button;
+        }
+      }
+    }
+  }
+
   #modo {
+    padding: 5rem 0;
+  }
+
+  #partenaires {
     padding: 5rem 0;
   }
 }

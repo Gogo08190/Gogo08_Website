@@ -1,0 +1,48 @@
+/* Liste Partenaires
+================================================ */
+
+.partenaires_slider {
+  padding-top: 5rem;
+
+  h3 {
+    margin-top: 10px;
+    @extend %texte;
+    font-family: 'Montserrat', sans-serif;
+    color: $turquoise;
+    font-size: 3rem;
+  }
+
+  p {
+    @extend %texte;
+    padding: 3rem 0;
+
+    strong {
+      color: $turquoise;
+    }
+  }
+
+  .button {
+    .uk-button {
+      @extend %button;
+    }
+  }
+
+  .uk-dotnav {
+        * {
+          * {
+            border: 1px solid $turquoise;
+            width: 15px;
+            height: 15px;
+
+            &:focus,&:hover {
+              background-color: $turquoise;
+            }
+          }
+        }
+        .uk-active {
+          * {
+            background-color: $turquoise;
+          }
+        }
+      }
+}
