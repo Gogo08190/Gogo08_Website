@@ -138,7 +138,7 @@ body ::-moz-selection {
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255, 0, 0, 0.4);
+  background: #1D594E;
 }
 
 body {
