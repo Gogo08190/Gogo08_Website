@@ -101,6 +101,46 @@ body {
   background-color: #2A3740;
 }
 
+html ::-moz-selection, body ::-moz-selection {
+  background: #43D9BD;
+  color: white;
+}
+
+html ::selection,
+body ::selection {
+  background: #43D9BD;
+  color: white;
+}
+
+html ::-moz-selection,
+body ::-moz-selection {
+  background: #43D9BD;
+  color: white;
+}
+
+/* Let's get this party started */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #43D9BD;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
+}
+
 body {
   overflow-x: hidden;
 }

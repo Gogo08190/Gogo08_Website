@@ -11,6 +11,36 @@ html, body {
   line-height: 1.5;
   color: black;
   background-color: $dark;
+
+  ::selection {
+    background: $turquoise;
+    color: white;
+  }
+
+  ::-moz-selection {
+    background: $turquoise;
+    color: white;
+  }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $turquoise;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4);
 }
 
 body {
