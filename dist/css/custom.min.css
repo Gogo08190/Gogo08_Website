@@ -92,6 +92,10 @@ body {
   background-color: #2A3740;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a:focus {
   outline: 0 !important;
 }

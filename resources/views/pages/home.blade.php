@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-	<section id="top">
+	<section id="top" data-aos="fade-up">
 		<div class="uk-container uk-text-center">
 			<div class="title">
 				<h2><span>Le live</span></h2>
@@ -17,13 +17,13 @@
 			<div class="info">
 				<p>L'abonnement est le meilleur moyen de m'apporter ton soutien tout en obtenant des privilèges.</p>
 				<div class="button">
-					<a class="uk-button uk-button-default" href="#">S'abonnez <i class="fas fa-chevron-right"></i></a>
+					<a class="uk-button uk-button-default" target="_blank" href="https://secure.twitch.tv/products/gogo08190">S'abonnez <i class="fas fa-chevron-right"></i></a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="modo">
+	<section id="modo" data-aos="fade-right">
 		<div class="uk-container uk-text-center">
 			<div class="title">
 				<h2><span>La Team</span></h2>
@@ -88,5 +88,9 @@
 @endsection
 
 @section('javascript')
+
+<script>
+    AOS.init();
+</script>
 
 @endsection

@@ -13,6 +13,10 @@ html, body {
   background-color: $dark;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a:focus {
   outline:0 !important;
 }
