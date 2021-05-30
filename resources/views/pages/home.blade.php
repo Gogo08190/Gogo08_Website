@@ -8,7 +8,7 @@
 	<section id="top" data-aos="fade-up">
 		<div class="uk-container uk-text-center">
 			<div class="title">
-				<h2><span>Le live</span></h2>
+				<h2><span>Le Live</span></h2>
 			</div>
 			<div class="twitch_player">
 				<iframe src="https://player.twitch.tv/?channel=gogo08190&parent=gogo08.fr" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="742"></iframe>
@@ -60,7 +60,7 @@
 	<section id="partenaires">
 		<div class="uk-container uk-container-xsmall uk-text-center">
 			<div class="title">
-				<h2><span>Les partenaires</span></h2>
+				<h2><span>Les Partenaires</span></h2>
 			</div>
 
 			<div class="partenaires_slider" data-uk-slider="autoplay: true">

@@ -13,7 +13,7 @@ $page->addSettings([
     'section-slug-rs' => [
       Field::text('youtube', ['label' => 'Youtube']),
       Field::text('twitch', ['label' => 'Twitch']),
-      Field::text('Discord', ['label' => 'discord']),
+      Field::text('discord', ['label' => 'Discord']),
       Field::text('instagram', ['label' => 'Instagram']),
       Field::text('github', ['label' => 'GitHub']),
       Field::text('twitter', ['label' => 'Twitter'])
