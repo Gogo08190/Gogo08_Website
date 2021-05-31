@@ -391,7 +391,7 @@ header#page-header #prenav .social a:hover {
 }
 
 header#page-header #nav {
-  box-shadow: -5px 1px 5px #43D9BD;
+  box-shadow: 0 2px 5px #43D9BD;
   padding: 1rem 0;
   background-color: #2A3740;
 }
