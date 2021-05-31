@@ -34,7 +34,7 @@ function custom_page_home() {
 	}
 }
 
-Metabox::make('Home', 'page')
+Metabox::make('page_home', 'page')
 	->add(new Section('top', 'Haut de la page', [
 	    Field::textarea('titre', ['label' => 'Titre']),
 			Field::textarea('twitch_desc', ['label' => 'Texte Twitch']),
