@@ -7,16 +7,16 @@
 @section('content')
 	<section id="top">
 		<div class="uk-container uk-text-center">
-			<div class="title animate__animated animate__bounceInRight">
+			<div class="title animate__animated animate__bounceInUp">
 				<h1><span>{!! $titre !!}</span></h1>
 			</div>
 
-			<div class="about animate__animated animate__bounceInLeft">
+			<div class="about">
 				<div class="uk-child-width-expand@s uk-text-center" data-uk-grid>
-					<div>
+					<div class="animate__animated animate__bounceInLeft">
 						<img src="{{ wp_get_attachment_image_src($logo, 'logo')[0] }}" alt="Gogo08">
 					</div>
-					<div>
+					<div class="animate__animated animate__bounceInRight">
 						{!! $intro_about !!}
 
 						<div class="uk-container uk-container-xsmall uk-text-center">
@@ -42,7 +42,7 @@
 				<h2><span>{!! $titre_faq !!}</span></h2>
 			</div>
 			{!! do_shortcode($faq_shortcode) !!}
-			
+
 		</div>
 	</section>
 

@@ -7,11 +7,11 @@
 @section('content')
 	<section id="top" data-aos="fade-up">
 		<div class="uk-container uk-text-center">
-			<div class="title">
+			<div class="title animate__animated animate__bounceInRight">
 				<h1><span>{!! $titre !!}</span></h1>
 			</div>
 
-			<div class="youtube_video">
+			<div class="youtube_video animate__animated animate__bounceInLeft">
 				{!! do_shortcode($shortcode) !!}
 			</div>
 		</div>
