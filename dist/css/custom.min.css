@@ -487,6 +487,10 @@ header#page-header #nav .uk-navbar-right a:hover {
   padding: 5rem 0;
 }
 
+#wrapper.home #top .title {
+  padding-bottom: 3rem;
+}
+
 #wrapper.home #top .twitch_player {
   padding-bottom: 3rem;
 }
