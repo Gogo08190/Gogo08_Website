@@ -1,0 +1,71 @@
+/* Form
+================================================ */
+#wrapper.contact {
+  form {
+    .wpcf7-text, .wpcf7-textarea {
+      font-family: 'Montserrat', sans-serif;
+      border: none;
+      width: 100%;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border: 2px solid $turquoise;
+      font-size: 1.7rem;
+      color: white;
+      padding: 16px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      resize: none;
+      background-color: $dark;
+
+      &:focus {
+        outline: none;
+        border-color: $turquoise;
+        box-shadow: 0 0 10px $turquoise;
+      }
+
+      &::placeholder {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+
+    .wpcf7-submit {
+      @extend %button;
+      outline: none;
+      color: white;
+      border: 2px solid $turquoise;
+      background-color: $dark;
+      background: linear-gradient(to right, $turquoise 50%, $dark 50%);
+      background-position: right bottom;
+      background-size: 220% 100%;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      float: right;
+      padding: 1rem 2rem 1rem 2rem;
+    }
+  }
+}
+
+form {
+  .wpcf7-not-valid-tip {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .wpcf7-response-output {
+    font-size: 1.5rem;
+    color: white;
+
+  }
+
+  .champ {
+    font-size: 1.6rem;
+  }
+
+  .uk-text-center {
+    @extend %texte;
+    color: white;
+  }
+}
