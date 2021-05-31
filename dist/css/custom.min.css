@@ -599,6 +599,10 @@ header#page-header #nav .uk-navbar-right a:hover {
   padding-top: 1rem;
 }
 
+#wrapper.modpacks #partenaires {
+  padding: 5rem 0;
+}
+
 /* Contact
 ================================================ */
 
