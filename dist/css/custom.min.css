@@ -16,6 +16,7 @@
 #wrapper.home #top .info p,
 #wrapper.modpacks #top .list_modpacks > div .categories > div h3,
 #wrapper.modpacks #top .list_modpacks > div p,
+#wrapper.about #top .about p,
 #page-footer #copyright p,
 .title p,
 .list-modos .modos > div h3,
@@ -29,6 +30,8 @@ form .uk-text-center {
 }
 
 #wrapper.modpacks #top .list_modpacks > div h1,
+#wrapper.about #top .about h3,
+#wrapper.about #top .about h4,
 #wrapper.contact #top h3,
 .title h1,
 .title h2 {
@@ -608,6 +611,103 @@ header#page-header #nav .uk-navbar-right a:hover {
 /* Contact
 ================================================ */
 
+#wrapper.about #top {
+  padding: 5rem 0;
+}
+
+#wrapper.about #top .about {
+  padding-top: 5rem;
+}
+
+#wrapper.about #top .about img {
+  border: 4px solid #43D9BD;
+}
+
+#wrapper.about #top .about h4 {
+  font-size: 2rem;
+  color: #43D9BD;
+  margin-top: 10px;
+}
+
+#wrapper.about #top .about p strong {
+  color: #43D9BD;
+}
+
+#wrapper.about #top .about .social > div a {
+  color: white;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+#wrapper.about #top .about .social > div a:hover {
+  color: #41D9AE;
+}
+
+#wrapper.about #faq .wpsm_panel-group {
+  padding-top: 3rem;
+}
+
+#wrapper.about #faq .wpsm_panel-heading .ac_title_class {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.7rem !important;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#wrapper.about #faq .wpsm_panel-heading .ac_open_cl_icon {
+  color: #43D9BD !important;
+  background-color: #2A3740 !important;
+}
+
+#wrapper.about #faq .wpsm_panel-body p {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.7rem !important;
+}
+
+#wrapper.about #faq .wpsm_panel-body p strong,
+#wrapper.about #faq .wpsm_panel-body p a {
+  color: #43D9BD !important;
+  font-weight: bold !important;
+}
+
+#wrapper.about #faq .wpsm_panel-body ul li {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.7rem !important;
+}
+
+#wrapper.about #faq .wpsm_panel-body ul li strong {
+  color: #43D9BD !important;
+}
+
+#wrapper.about #faq .wpsm_panel-default {
+  border: 2px solid #43D9BD !important;
+}
+
+#wrapper.about #faq .uk-accordion {
+  padding-top: 5rem;
+}
+
+#wrapper.about #faq .uk-accordion li {
+  border-top: 1px solid #43D9BD;
+  padding-top: 1em;
+}
+
+#wrapper.about #faq .uk-open .uk-accordion-title {
+  color: #43D9BD;
+}
+
+#wrapper.about #faq .uk-open .uk-accordion-title::before {
+  color: #43D9BD;
+}
+
+#wrapper.about #partenaires {
+  padding: 5rem 0;
+}
+
+/* Contact
+================================================ */
+
 #wrapper.contact #top {
   padding: 5rem 0;
 }
@@ -852,11 +952,15 @@ header#page-header #nav .uk-navbar-right a:hover {
 }
 
 .partenaires_slider p {
-  padding: 3rem 0;
+  padding-top: 2rem;
 }
 
 .partenaires_slider p strong {
   color: #43D9BD;
+}
+
+.partenaires_slider .button {
+  padding: 2rem 0;
 }
 
 .partenaires_slider .uk-dotnav * * {

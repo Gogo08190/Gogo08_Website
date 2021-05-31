@@ -14,7 +14,7 @@
 
   p {
     @extend %texte;
-    padding: 3rem 0;
+    padding-top: 2rem;
 
     strong {
       color: $turquoise;
@@ -22,6 +22,7 @@
   }
 
   .button {
+    padding: 2rem 0;
     .uk-button {
       @extend %button;
     }

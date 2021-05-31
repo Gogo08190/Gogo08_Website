@@ -1,0 +1,131 @@
+/* Contact
+================================================ */
+
+#wrapper.about {
+  #top {
+    padding: 5rem 0;
+
+    .about {
+      padding-top: 5rem;
+
+      img {
+        border: 4px solid $turquoise;
+      }
+
+      h3 {
+        @extend %title;
+      }
+
+      h4 {
+        @extend %title;
+        font-size: 2rem;
+        color: $turquoise;
+        margin-top: 10px;
+      }
+
+      p {
+        @extend %texte;
+
+        strong {
+          color: $turquoise;
+        }
+      }
+
+      .social {
+        >div {
+          a {
+            color: white;
+            font-size: 5rem;
+            text-decoration: none;
+
+            &:hover {
+              color: $light_turquoise;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #faq {
+    .wpsm_panel-group {
+      padding-top: 3rem;
+    }
+    
+    .wpsm_panel-heading {
+      .ac_title_class {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 1.7rem !important;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .ac_open_cl_icon {
+        color: $turquoise !important;
+        background-color: $dark !important;
+      }
+    }
+
+    .wpsm_panel-body{
+
+      p {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 1.7rem !important;
+
+        strong, a {
+          color: $turquoise !important;
+          font-weight: bold !important;
+        }
+      }
+
+      ul {
+        li {
+          font-family: 'Roboto', sans-serif !important;
+          font-size: 1.7rem !important;
+
+          strong {
+            color: $turquoise !important;
+          }
+        }
+      }
+    }
+
+    .wpsm_panel-default {
+      border: 2px solid $turquoise !important;
+    }
+
+
+
+
+
+
+
+    .uk-accordion {
+      padding-top: 5rem;
+
+      li {
+        border-top: 1px solid $turquoise;
+        padding-top: 1em;
+      }
+    }
+
+    .uk-open {
+      .uk-accordion-title {
+        color: $turquoise;
+
+        &::before {
+          color: $turquoise;
+        }
+      }
+    }
+
+    .uk-accordion-content {
+
+    }
+  }
+
+  #partenaires {
+    padding: 5rem 0;
+  }
+}
