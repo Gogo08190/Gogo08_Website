@@ -37,7 +37,17 @@ function custom_page_home() {
 Metabox::make('Home', 'page')
 	->add(new Section('top', 'Haut de la page', [
 	    Field::textarea('titre', ['label' => 'Titre']),
-			Field::textarea('desc', ['label' => 'Description']),
+			Field::textarea('twitch_desc', ['label' => 'Texte Twitch']),
+			Field::text('twitch_url', ['label' => 'Twitch URL']),
+			Field::text('twitch_don', ['label' => 'Twitch DON']),
+	]))
+
+	->add(new Section('la_team', 'Team', [
+	    Field::textarea('titre_team', ['label' => 'Titre']),
+	]))
+
+	->add(new Section('partner', 'Partenaires', [
+	    Field::textarea('titre_partenaire', ['label' => 'Titre']),
 	]))
 	->setTemplate('home')
 	->setTitle('Contenu de la page')

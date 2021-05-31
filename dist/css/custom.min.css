@@ -85,6 +85,202 @@
   left: 0;
 }
 
+.underline::after {
+  content: '';
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  right: 0;
+  height: .4rem;
+  background: #43D9BD;
+  z-index: -1;
+  transition: transform .3s;
+}
+
+@-webkit-keyframes souligne {
+  0% {
+    transform: scaleX(0);
+  }
+
+  46% {
+    transform: scaleX(0);
+  }
+
+  54% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes souligne {
+  0% {
+    transform: scaleX(0);
+  }
+
+  46% {
+    transform: scaleX(0);
+  }
+
+  54% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.souligne_turquoise {
+  position: relative;
+  padding: 2px;
+  display: inline-block;
+  line-height: 1.1;
+  z-index: 2;
+}
+
+.souligne_turquoise:after {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 4px);
+  left: -2px;
+  top: 0;
+  z-index: -1;
+  animation: souligne 5s ease 0s infinite alternate-reverse none;
+  transform-origin: 0 0;
+}
+
+[data-count-souligne="1"]:after {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+[data-count-souligne="2"]:after {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+[data-count-souligne="3"]:after {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+[data-count-souligne="4"]:after {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+[data-count-souligne="5"]:after {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+[data-count-souligne="6"]:after {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+[data-count-souligne="7"]:after {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+[data-count-souligne="8"]:after {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+[data-count-souligne="9"]:after {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+[data-count-souligne="10"]:after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+[data-count-souligne="11"]:after {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+[data-count-souligne="12"]:after {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+[data-count-souligne="13"]:after {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+[data-count-souligne="14"]:after {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+[data-count-souligne="15"]:after {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+[data-count-souligne="16"]:after {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+[data-count-souligne="17"]:after {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+[data-count-souligne="18"]:after {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+[data-count-souligne="19"]:after {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+[data-count-souligne="20"]:after {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+[data-count-souligne="21"]:after {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+[data-count-souligne="22"]:after {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+[data-count-souligne="23"]:after {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+[data-count-souligne="24"]:after {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+[data-count-souligne="25"]:after {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
 /* Global
 ================================================ */
 
@@ -580,5 +776,20 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 .list_playlist .playlist iframe {
   border: 3px solid #43D9BD;
+}
+
+/* Decor
+================================================ */
+
+.underline {
+  position: relative;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+}
+
+.souligne_turquoise:after {
+  background: #43D9BD;
 }
 

@@ -66,3 +66,61 @@ $transition: all 0.2s ease-in-out;
         }
     }
 }
+
+%underline {
+    content: '';
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+    right: 0;
+    height: .4rem;
+    background: $turquoise;
+    z-index: -1;
+    transition: transform .3s;
+}
+
+@keyframes souligne {
+    0%{
+        transform: scaleX(0);
+    }
+    46%{
+        transform: scaleX(0);
+    }
+    54%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+%souligne {
+    position: relative;
+    padding: 2px;
+    display: inline-block;
+    line-height: 1.1;
+    z-index: 2;
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: calc(100% + 4px);
+        left: -2px;
+        top: 0;
+        z-index: -1;
+        animation: souligne 5s ease 0s infinite alternate-reverse none;
+        transform-origin: 0 0;
+    }
+}
+
+@for $i from 1 through 25 {
+    [data-count-souligne="#{$i}"] {
+        &:after {
+            animation-delay: $i * .2s;
+        }
+    }
+}

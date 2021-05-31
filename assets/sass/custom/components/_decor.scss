@@ -1,0 +1,20 @@
+/* Decor
+================================================ */
+.underline {
+    position: relative;
+
+    &::after {
+        @extend %underline;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+.souligne_turquoise {
+    @extend %souligne;
+    &:after {
+        background: $turquoise;
+    }
+}
