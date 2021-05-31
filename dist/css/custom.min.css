@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;
 
-400;500;700);@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);@import url(https://use.typekit.net/ggx5veo.css);@charset "UTF-8";
+400;500;700);@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);@import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);@import url(https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap);@charset "UTF-8";
 
 /*  Theme
 ================================================ */
@@ -571,6 +571,8 @@ header#page-header #nav .uk-navbar-right a:hover {
 }
 
 #wrapper.modpacks #top .list_modpacks > div h1 span {
+  font-family: 'Fredoka One', cursive;
+  font-weight: normal;
   color: #43D9BD;
   font-size: 3rem;
 }
