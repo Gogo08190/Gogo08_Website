@@ -1,26 +1,10 @@
-/*  Fonts
-================================================ */
-
-/* Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700');
-
-/* Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* Kaushan Script */
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
-/* Fredoka One */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-/* Icomoon */
 @font-face {
   font-family: 'gogo';
-  src:  url('../fonts/gogo.eot?wl6klj');
-  src:  url('../fonts/gogo.eot?wl6klj#iefix') format('embedded-opentype'),
-    url('../fonts/gogo.ttf?wl6klj') format('truetype'),
-    url('../fonts/gogo.woff?wl6klj') format('woff'),
-    url('../fonts/gogo.svg?wl6klj#gogo') format('svg');
+  src:  url('fonts/gogo.eot?wl6klj');
+  src:  url('fonts/gogo.eot?wl6klj#iefix') format('embedded-opentype'),
+    url('fonts/gogo.ttf?wl6klj') format('truetype'),
+    url('fonts/gogo.woff?wl6klj') format('woff'),
+    url('fonts/gogo.svg?wl6klj#gogo') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

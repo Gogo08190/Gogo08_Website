@@ -1,7 +1,7 @@
 <?php
 
 /**
- * contact-application.php - Custom code template contact.
+ * about-application.php - Custom code template about.
  */
 
 use Themosis\Support\Facades\Field;

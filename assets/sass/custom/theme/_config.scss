@@ -1,0 +1,64 @@
+/* Contact
+================================================ */
+
+#wrapper.config {
+  #top {
+    padding: 5rem 0;
+
+    .title {
+      p {
+        strong {
+          color: $turquoise;
+        }
+      }
+    }
+  }
+
+  #list_config {
+    padding: 5rem 0;
+
+    .uk-card {
+      background: $dark;
+      border: 3px solid $turquoise;
+      box-shadow: 0px 0px 15px $turquoise;
+
+      .uk-card-title {
+        @extend %texte;
+        font-size: 3rem;
+        font-weight: bold;
+
+        span {
+          position: relative;
+
+          &::after {
+            display: block;
+            content: '';
+            background-color: $turquoise;
+            height: .7rem;
+            width: 4rem;
+            position: absolute;
+            right: 0;
+            bottom: -1rem;
+            z-index: 1;
+          }
+        }
+      }
+
+      p {
+        @extend %texte;
+        font-size: 1.7rem;
+        text-align: left;
+
+        span {
+          font-size: 2rem;
+          padding-right: 3rem;
+          color: $turquoise;
+        }
+      }
+    }
+  }
+
+  #partenaires {
+    padding: 5rem 0;
+  }
+}

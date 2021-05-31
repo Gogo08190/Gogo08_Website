@@ -1,7 +1,7 @@
 <?php
 
 /**
- * contact-application.php - Custom code template contact.
+ * modpack-application.php - Custom code template modpack.
  */
 
 use Themosis\Support\Facades\Field;

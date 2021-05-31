@@ -10,6 +10,123 @@
 
 /* Montserrat */
 
+@font-face {
+  font-family: 'gogo';
+  src: url(../fonts/gogo.eot?a2d1431de95eb8f200e891cf3e005614);
+  src: url(../fonts/gogo.eot?a2d1431de95eb8f200e891cf3e005614) format("embedded-opentype"), url(../fonts/gogo.ttf?716a31d6669108db0fc1c7c04aed98fb) format("truetype"), url(../fonts/gogo.woff?d997637f1f0f84ef2746966b3ccd72e7) format("woff"), url(../fonts/gogo.svg?3f87a51d3a3c5ec275bfa4298ded789a) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gogo' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-case-data:before {
+  content: "\E913";
+}
+
+.icon-graphics-card:before {
+  content: "\E914";
+}
+
+.icon-fan-propellers:before {
+  content: "\E915";
+}
+
+.icon-monitor:before {
+  content: "\E900";
+}
+
+.icon-speaker:before {
+  content: "\E901";
+}
+
+.icon-hdd:before {
+  content: "\E902";
+}
+
+.icon-keyboard:before {
+  content: "\E903";
+}
+
+.icon-mouse:before {
+  content: "\E904";
+}
+
+.icon-floppy:before {
+  content: "\E905";
+}
+
+.icon-hardware:before {
+  content: "\E906";
+}
+
+.icon-usb:before {
+  content: "\E907";
+}
+
+.icon-cord:before {
+  content: "\E908";
+}
+
+.icon-microphone:before {
+  content: "\E909";
+}
+
+.icon-ipod:before {
+  content: "\E90A";
+}
+
+.icon-headphone:before {
+  content: "\E90B";
+}
+
+.icon-cog:before {
+  content: "\E90C";
+}
+
+.icon-battery:before {
+  content: "\E90D";
+}
+
+.icon-battery-low:before {
+  content: "\E90E";
+}
+
+.icon-battery1:before {
+  content: "\E90F";
+}
+
+.icon-battery-full:before {
+  content: "\E910";
+}
+
+.icon-lamp:before {
+  content: "\E911";
+}
+
+.icon-settings:before {
+  content: "\E912";
+}
+
+/*  Colors
+================================================ */
+
+/*  Variables
+================================================ */
 
 .sst-status-text-live,
 .sst-status-text-offline,
@@ -17,6 +134,8 @@
 #wrapper.modpacks #top .list_modpacks > div .categories > div h3,
 #wrapper.modpacks #top .list_modpacks > div p,
 #wrapper.about #top .about p,
+#wrapper.config #list_config .uk-card .uk-card-title,
+#wrapper.config #list_config .uk-card p,
 #page-footer #copyright p,
 .title p,
 .list-modos .modos > div h3,
@@ -702,6 +821,63 @@ header#page-header #nav .uk-navbar-right a:hover {
 }
 
 #wrapper.about #partenaires {
+  padding: 5rem 0;
+}
+
+/* Contact
+================================================ */
+
+#wrapper.config #top {
+  padding: 5rem 0;
+}
+
+#wrapper.config #top .title p strong {
+  color: #43D9BD;
+}
+
+#wrapper.config #list_config {
+  padding: 5rem 0;
+}
+
+#wrapper.config #list_config .uk-card {
+  background: #2A3740;
+  border: 3px solid #43D9BD;
+  box-shadow: 0px 0px 15px #43D9BD;
+}
+
+#wrapper.config #list_config .uk-card .uk-card-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#wrapper.config #list_config .uk-card .uk-card-title span {
+  position: relative;
+}
+
+#wrapper.config #list_config .uk-card .uk-card-title span::after {
+  display: block;
+  content: '';
+  background-color: #43D9BD;
+  height: .7rem;
+  width: 4rem;
+  position: absolute;
+  right: 0;
+  bottom: -1rem;
+  z-index: 1;
+}
+
+#wrapper.config #list_config .uk-card p {
+  font-size: 1.7rem;
+  text-align: left;
+}
+
+#wrapper.config #list_config .uk-card p span {
+  font-size: 2rem;
+  padding-right: 3rem;
+  color: #43D9BD;
+}
+
+#wrapper.config #partenaires {
   padding: 5rem 0;
 }
 

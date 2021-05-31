@@ -13,5 +13,6 @@ return [
   'video' => [__('Vidéo', THEME_TD), ['page']],
   'modpacks' => [__('Modpack', THEME_TD), ['page']],
   'about' => [__('A propos', THEME_TD), ['page']],
+  'config' => [__('Config', THEME_TD), ['page']],
   'contact' => [__('Contact', THEME_TD), ['page']],
 ];

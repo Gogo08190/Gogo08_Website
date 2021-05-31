@@ -31,7 +31,7 @@ class AboutController extends BaseController
       $this->titre_faq = get_post_meta(get_the_ID(), 'th_titre_faq', true);
       $this->faq_shortcode = get_post_meta(get_the_ID(), 'th_faq_shortcode', true);
 
-      // Haut de page
+      // Partenaire
       $this->titre_partenaire = get_post_meta(get_the_ID(), 'th_titre_partenaire', true);
     }
 
