@@ -41,7 +41,7 @@
 	<section id="partenaires">
 		<div class="uk-container uk-container-xsmall uk-text-center">
 			<div class="title">
-				<h2><span>Les Partenaires</span></h2>
+				<h2><span>{!! $titre_partenaire !!}</span></h2>
 			</div>
 
 			<div class="partenaires_slider" data-uk-slider="autoplay: true">

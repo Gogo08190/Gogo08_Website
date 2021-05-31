@@ -43,6 +43,11 @@ Metabox::make('page_video', 'page')
 	->add(new Section('playlist', 'Playlist', [
 	    Field::textarea('titre_playlist', ['label' => 'Titre']),
 	]))
+
+	->add(new Section('partner', 'Partenaires', [
+	    Field::textarea('titre_partenaire', ['label' => 'Titre']),
+	]))
+
 	->setTemplate('video')
 	->setTitle('Contenu de la page')
 	->set();

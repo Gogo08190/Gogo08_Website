@@ -15,6 +15,9 @@ class VideoController extends BaseController
     // Playlist
     protected $titre_playlist;
 
+    // Partenaires
+    protected $titre_partenaire;
+
     public function __construct() {
 
       // Haut de page
@@ -23,6 +26,9 @@ class VideoController extends BaseController
 
       // Playlist
       $this->titre_playlist = get_post_meta(get_the_ID(), 'th_titre_playlist', true);
+
+      // Partenaires
+      $this->titre_partenaire = get_post_meta(get_the_ID(), 'th_titre_partenaire', true);
     }
 
 
@@ -35,6 +41,9 @@ class VideoController extends BaseController
 
         // Playlist
         'titre_playlist' => $this->titre_playlist,
+
+        // Partenaires
+        'titre_partenaire' => $this->titre_partenaire,
 
         // Post
         'list_partenaires' => $model->get_partenaires(),
