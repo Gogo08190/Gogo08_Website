@@ -1,0 +1,68 @@
+/* Contact
+================================================ */
+
+#wrapper.modpacks {
+  #top {
+    padding: 5rem 0;
+
+    .title {
+      p {
+        padding-top: 2rem;
+      }
+    }
+
+    .list_modpacks {
+      padding-top: 5rem;
+
+      >div {
+        padding-top: 3rem;
+
+        img {
+          border: 4px solid $turquoise;
+        }
+
+        h1 {
+          @extend %title;
+          font-size: 4rem;
+
+          span {
+            color: $turquoise;
+            font-size: 3rem;
+          }
+        }
+
+        .categories {
+          >div {
+            margin-top: 20px;
+
+            h3 {
+              @extend %texte;
+              font-size: 1.6rem;
+              padding: 1rem 0;
+              border: 2px solid $turquoise;
+              border-radius: 40px;
+            }
+          }
+        }
+
+        p {
+          padding-top: 1rem;
+          @extend %texte;
+          font-size: 1.6rem;
+
+          strong {
+            color: $turquoise;
+          }
+        }
+
+        .button {
+          padding-top: 1rem;
+          .uk-button {
+            @extend %button;
+          }
+        }
+      }
+
+    }
+  }
+}

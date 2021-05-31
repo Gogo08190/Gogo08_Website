@@ -14,6 +14,8 @@
 .sst-status-text-live,
 .sst-status-text-offline,
 #wrapper.home #top .info p,
+#wrapper.modpacks #top .list_modpacks > div .categories > div h3,
+#wrapper.modpacks #top .list_modpacks > div p,
 #page-footer #copyright p,
 .title p,
 .list-modos .modos > div h3,
@@ -26,6 +28,7 @@ form .uk-text-center {
   color: white;
 }
 
+#wrapper.modpacks #top .list_modpacks > div h1,
 #wrapper.contact #top h3,
 .title h1,
 .title h2 {
@@ -37,6 +40,7 @@ form .uk-text-center {
 
 #wrapper.home #top .info .button .uk-button,
 #wrapper.video #playlist .list_playlist .button .uk-button,
+#wrapper.modpacks #top .list_modpacks > div .button .uk-button,
 .partenaires_slider .button .uk-button,
 #wrapper.contact form .wpcf7-submit {
   color: white;
@@ -59,6 +63,7 @@ form .uk-text-center {
 
 #wrapper.home #top .info .button .uk-button i,
 #wrapper.video #playlist .list_playlist .button .uk-button i,
+#wrapper.modpacks #top .list_modpacks > div .button .uk-button i,
 .partenaires_slider .button .uk-button i,
 #wrapper.contact form .wpcf7-submit i {
   position: relative;
@@ -71,10 +76,12 @@ form .uk-text-center {
 
 #wrapper.home #top .info .button .uk-button:hover,
 #wrapper.video #playlist .list_playlist .button .uk-button:hover,
+#wrapper.modpacks #top .list_modpacks > div .button .uk-button:hover,
 .partenaires_slider .button .uk-button:hover,
 #wrapper.contact form .wpcf7-submit:hover,
 #wrapper.home #top .info .button .uk-button:focus,
 #wrapper.video #playlist .list_playlist .button .uk-button:focus,
+#wrapper.modpacks #top .list_modpacks > div .button .uk-button:focus,
 .partenaires_slider .button .uk-button:focus,
 #wrapper.contact form .wpcf7-submit:focus {
   background-position: left bottom;
@@ -84,10 +91,12 @@ form .uk-text-center {
 
 #wrapper.home #top .info .button .uk-button:hover i,
 #wrapper.video #playlist .list_playlist .button .uk-button:hover i,
+#wrapper.modpacks #top .list_modpacks > div .button .uk-button:hover i,
 .partenaires_slider .button .uk-button:hover i,
 #wrapper.contact form .wpcf7-submit:hover i,
 #wrapper.home #top .info .button .uk-button:focus i,
 #wrapper.video #playlist .list_playlist .button .uk-button:focus i,
+#wrapper.modpacks #top .list_modpacks > div .button .uk-button:focus i,
 .partenaires_slider .button .uk-button:focus i,
 #wrapper.contact form .wpcf7-submit:focus i {
   opacity: 1;
@@ -532,6 +541,62 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 #wrapper.video #partenaires {
   padding: 5rem 0;
+}
+
+/* Contact
+================================================ */
+
+#wrapper.modpacks #top {
+  padding: 5rem 0;
+}
+
+#wrapper.modpacks #top .title p {
+  padding-top: 2rem;
+}
+
+#wrapper.modpacks #top .list_modpacks {
+  padding-top: 5rem;
+}
+
+#wrapper.modpacks #top .list_modpacks > div {
+  padding-top: 3rem;
+}
+
+#wrapper.modpacks #top .list_modpacks > div img {
+  border: 4px solid #43D9BD;
+}
+
+#wrapper.modpacks #top .list_modpacks > div h1 {
+  font-size: 4rem;
+}
+
+#wrapper.modpacks #top .list_modpacks > div h1 span {
+  color: #43D9BD;
+  font-size: 3rem;
+}
+
+#wrapper.modpacks #top .list_modpacks > div .categories > div {
+  margin-top: 20px;
+}
+
+#wrapper.modpacks #top .list_modpacks > div .categories > div h3 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  border: 2px solid #43D9BD;
+  border-radius: 40px;
+}
+
+#wrapper.modpacks #top .list_modpacks > div p {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
+
+#wrapper.modpacks #top .list_modpacks > div p strong {
+  color: #43D9BD;
+}
+
+#wrapper.modpacks #top .list_modpacks > div .button {
+  padding-top: 1rem;
 }
 
 /* Contact

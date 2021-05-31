@@ -74,4 +74,26 @@ class Post extends Model
     }
     return $playlist;
   }
+
+  public function get_modpack() {
+    $args = array(
+      'post_type' => 'slug-modpack',
+      'post_status' => 'publish',
+      'posts_per_page' => -1,
+      'order' => 'ASC'
+    );
+
+    $posts = new WP_Query($args);
+
+    $modpack = array();
+    foreach ($posts->get_posts() as $key => $val) {
+      $modpack[$key]['title'] = get_the_title($val->ID);
+      $modpack[$key]['titre'] = get_post_meta($val->ID, 'th_titre', true);
+      $modpack[$key]['categorie'] = get_post_meta($val->ID, 'th_categorie');
+      $modpack[$key]['desc'] = get_post_meta($val->ID, 'th_desc', true);
+      $modpack[$key]['url'] = get_post_meta($val->ID, 'th_url', true);
+      $modpack[$key]['logo'] = get_post_meta($val->ID, 'th_logo', true);
+    }
+    return $modpack;
+  }
 }
