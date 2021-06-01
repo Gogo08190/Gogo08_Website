@@ -9,7 +9,7 @@
 			</div>
 
 			<div class="uk-container uk-container-xsmall uk-text-center wow bounceInLeft">
-				<h3><span>Où directement sur les réseaux :<span></h3>
+				<h3><span>Où directement sur les réseaux :</span></h3>
 				<div class="social uk-flex-center uk-child-width-1-5@m uk-child-width-1-5@s" data-uk-grid>
 					<div><a href="{!! get_option('th_discord') !!}" target="_blank" class="social_icon discord"><i class="fab fa-discord"></i></a></div>
 					<div><a href="{!! get_option('th_twitter') !!}" target="_blank" class="social_icon twitter"><i class="fab fa-twitter"></i></a></div>
