@@ -4,6 +4,11 @@
 		<meta charset="{{ get_bloginfo('charset') }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ get_template_directory_uri() }}/dist/images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ get_template_directory_uri() }}/dist/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ get_template_directory_uri() }}/dist/images/favicon/favicon-16x16.png">
+		<link rel="mask-icon" href="{{ get_template_directory_uri() }}/dist/images/favicon/safari-pinned-tab.svg" color="#43D9BD">
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
