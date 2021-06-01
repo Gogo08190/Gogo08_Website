@@ -44,7 +44,7 @@
 		    </div>
 			</div>
 		</div>
-	<section>
+	</section>
 
 	<section id="partenaires wow bounceInUp">
 		<div class="uk-container uk-container-xsmall uk-text-center">
