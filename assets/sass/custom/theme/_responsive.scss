@@ -21,6 +21,10 @@
     font-size: 50%;
   }
 
+  .sst-main-wrapper-active {
+    display: none !important;
+  }
+
   // Home
   #wrapper.home {
     .chat {

@@ -1129,6 +1129,10 @@ header#page-header #nav .uk-navbar-right a:hover {
     font-size: 50%;
   }
 
+  .sst-main-wrapper-active {
+    display: none !important;
+  }
+
   #wrapper.home .chat {
     display: none;
   }
