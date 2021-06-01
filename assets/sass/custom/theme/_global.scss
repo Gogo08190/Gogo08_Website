@@ -25,6 +25,15 @@ html, body {
 }
 
 #wrapper {
+  position: absolute;
+  width: 1920px;
+  transform-origin: top left;
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition;
+}
+
+#wrapper {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -56,17 +65,8 @@ html, body {
 	background: $dark_turquoise;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 a:focus {
   outline:0 !important;
-}
-
-#wrapper {
-  position: relative;
-  height: 100%;
 }
 
 .sst-status-wrapper {
@@ -80,4 +80,55 @@ a:focus {
 .sst-status-text-live, .sst-status-text-offline {
   @extend %texte;
   font-size: 1.5rem;
+}
+
+/* Loader */
+.pace-running {
+  overflow: hidden;
+}
+
+.pace-done {
+  #wrapper, header#page-header, {
+    opacity: 1 !important;
+    visibility: visible;
+  }
+}
+
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pace.pace-inactive .pace-activity {
+  display: none;
+}
+
+.pace .pace-activity {
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: 60px;
+  width: 60px;
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $turquoise transparent transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {  transform: rotate(359deg); }
 }

@@ -2,6 +2,9 @@
 ================================================ */
 
 header#page-header {
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition;
 
   #prenav {
     padding: 1rem 0;
