@@ -138,6 +138,7 @@
 #wrapper.config #list_config .uk-card p,
 #wrapper.mentions #top .mention h4,
 #wrapper.mentions #top .mention p,
+#error p,
 #page-footer #copyright p,
 .title p,
 .list-modos .modos > div h3,
@@ -154,6 +155,7 @@ form .uk-text-center {
 #wrapper.about #top .about h3,
 #wrapper.about #top .about h4,
 #wrapper.contact #top h3,
+#error h2,
 .title h1,
 .title h2 {
   font-family: 'Montserrat', sans-serif;
@@ -455,6 +457,17 @@ html ::-moz-selection,
 body ::-moz-selection {
   background: #43D9BD;
   color: white;
+}
+
+#wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper main {
+  flex-grow: 1;
 }
 
 /* Let's get this party started */
@@ -957,6 +970,33 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 /*  Page
 ================================================ */
+
+/* Error
+================================================ */
+
+#error {
+  padding: 5rem;
+}
+
+#error h2 span {
+  position: relative;
+}
+
+#error h2 span::after {
+  display: block;
+  content: '';
+  background-color: #43D9BD;
+  height: 1rem;
+  width: 9rem;
+  position: absolute;
+  right: 0;
+  bottom: -1rem;
+  z-index: 1;
+}
+
+#error p {
+  padding-top: 5rem;
+}
 
 /*  Footer
 ================================================ */

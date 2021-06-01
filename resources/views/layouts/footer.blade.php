@@ -1,6 +1,6 @@
 <footer id="page-footer">
   <section id="prefooter">
-    <div class="uk-container uk-container-xsmall uk-text-center animate__animated animate__bounceInUp">
+    <div class="uk-container uk-container-xsmall uk-text-center wow bounceInUp">
       <div class="social uk-child-width-expand" data-uk-grid>
         <div><a href="{!! get_option('th_youtube') !!}" target="_blank" class="social_icon youtube shake-slow"><i class="fab fa-youtube"></i></a></div>
         <div><a href="{!! get_option('th_twitch') !!}" target="_blank" class="social_icon twitch shake-slow"><i class="fab fa-twitch"></i></a></div>
