@@ -13,6 +13,10 @@
       padding-bottom: 3rem;
       height: 54vh;
 
+      iframe {
+        border: 4px solid $turquoise !important;
+      }
+
       .live {
         width: calc(100% - 30rem);
       }

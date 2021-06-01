@@ -642,6 +642,10 @@ header#page-header #nav .uk-navbar-right a:hover {
   height: 54vh;
 }
 
+#wrapper.home #top .stream iframe {
+  border: 4px solid #43D9BD !important;
+}
+
 #wrapper.home #top .stream .live {
   width: calc(100% - 30rem);
 }

@@ -19,7 +19,7 @@
 				<div class="uk-flex-center uk-child-width-1-4@m uk-child-width-1-4@s uk-text-center wow bounceInUp" data-uk-grid>
 					<div>
 						<div class="button">
-							<a class="uk-button uk-button-default" target="_blank" href="{{ $twitch_url }}">S'abonnez <i class="fas fa-chevron-right"></i></a>
+							<a class="uk-button uk-button-default" target="_blank" href="{{ $twitch_url }}">S'abonner <i class="fas fa-chevron-right"></i></a>
 						</div>
 					</div>
 
