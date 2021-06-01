@@ -1,7 +1,5 @@
 @extends('layouts.main')
 
-@section('styles')
-
 @endsection
 
 @section('content')
@@ -51,7 +49,7 @@
 							@foreach($list_partenaires as $item)
 								<li>
 									<img src="{{ wp_get_attachment_image_src($item['logo'], 'partenaire')[0] }}" alt="{!! $item['title'] !!}">
-									<h3>{!! $item['title'] !!}
+									<h3>{!! $item['title'] !!}</h3>
 									<p>{!! $item['desc'] !!}</p>
 
 									<div class="button">
@@ -67,7 +65,5 @@
 		</div>
 	</section>
 @endsection
-
-@section('javascript')
 
 @endsection

@@ -1,5 +1,5 @@
 <footer id="page-footer">
-  <section id="prefooter">
+  <div id="prefooter">
     <div class="uk-container uk-container-xsmall uk-text-center wow bounceInUp">
       <div class="social uk-child-width-expand" data-uk-grid>
         <div><a href="{!! get_option('th_youtube') !!}" target="_blank" class="social_icon youtube shake-slow"><i class="fab fa-youtube"></i></a></div>
@@ -10,13 +10,13 @@
         <div><a href="{!! get_option('th_github') !!}" target="_blank" class="social_icon github shake-slow"><i class="fab fa-github"></i></a></div>
       </div>
     </div>
-  </section>
-  <section id="copyright">
+  </div>
+  <div id="copyright">
     <div class="uk-container">
       <div class="uk-text-center">
         <p>© <?php echo date ('Y'); ?> – Développé par <a href="mailto:contact@gogo08190.fr" rel="nofollow" title="Gogo08" target="_blank">Gogo08</a>. Tous droits réservés. <a href="/mentions-legales" rel="nofollow">Mentions légales.</a></p>
       </div>
     </div>
-  </section>
+  </div>
 
 </footer>

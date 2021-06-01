@@ -1,7 +1,5 @@
 @extends('layouts.main')
 
-@section('styles')
-
 @endsection
 
 @section('content')
@@ -32,7 +30,5 @@
 	</div>
 
 @endsection
-
-@section('javascript')
 
 @endsection

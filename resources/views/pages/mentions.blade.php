@@ -1,7 +1,5 @@
 @extends('layouts.main')
 
-@section('styles')
-
 @endsection
 
 @section('content')
@@ -20,11 +18,5 @@
   </div>
 
 @endsection
-
-@section('javascript')
-
-<script>
-    AOS.init();
-</script>
 
 @endsection
