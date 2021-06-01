@@ -10,9 +10,13 @@
 			<div class="title wow bounceInUp">
 				<h1><span>{!! $titre !!}</span></h1>
 			</div>
-			<div class="twitch_player wow bounceInRight">
-				<iframe src="https://player.twitch.tv/?channel=gogo08190&parent=gogo08.fr" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="742"></iframe>
-				<iframe title="chat" id="stream-chat" height="500" width="350" style="border: none;" src="https://www.twitch.tv/embed/gogo08190/chat?darkpopout&parent=gogo08.fr"></iframe>
+			<div class="stream wow bounceInRight" data-uk-grid>
+				<div class="live uk-width-2-3">
+					<iframe src="https://player.twitch.tv/?channel=gogo08190&parent=gogo08.fr" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>
+				</div>
+				<div class="chat uk-width-1-3">
+					<iframe title="chat" id="stream-chat" height="100%" width="100%" style="border: none;" src="https://www.twitch.tv/embed/gogo08190/chat?darkpopout&parent=gogo08.fr"></iframe>
+				</div>
 			</div>
 			<div class="info wow bounceInLeft">
 				<p>{!! $twitch_desc !!}</p>

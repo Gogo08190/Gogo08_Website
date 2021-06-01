@@ -21,7 +21,21 @@
     font-size: 50%;
   }
 
-  .sst-main-wrapper {
-    display: none !important;
+  // Home
+  #wrapper.home {
+    .chat {
+      display: none;
+    }
+
+    .live {
+      width: 100% !important;
+    }
   }
+}
+
+@media screen and (max-width : 639px) {
+  html, body {
+    font-size: 40%;
+  }
+
 }

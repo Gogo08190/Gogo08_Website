@@ -624,8 +624,18 @@ header#page-header #nav .uk-navbar-right a:hover {
   padding-bottom: 3rem;
 }
 
-#wrapper.home #top .twitch_player {
+#wrapper.home #top .stream {
   padding-bottom: 3rem;
+  height: 54vh;
+}
+
+#wrapper.home #top .stream .live {
+  width: calc(100% - 30rem);
+}
+
+#wrapper.home #top .stream .chat {
+  width: 30rem;
+  padding-left: 1px;
 }
 
 #wrapper.home #top .info p {
@@ -1013,8 +1023,19 @@ header#page-header #nav .uk-navbar-right a:hover {
     font-size: 50%;
   }
 
-  .sst-main-wrapper {
-    display: none !important;
+  #wrapper.home .chat {
+    display: none;
+  }
+
+  #wrapper.home .live {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  html,
+  body {
+    font-size: 40%;
   }
 }
 

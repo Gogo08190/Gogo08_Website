@@ -9,8 +9,18 @@
       padding-bottom: 3rem;
     }
 
-    .twitch_player {
+    .stream {
       padding-bottom: 3rem;
+      height: 54vh;
+
+      .live {
+        width: calc(100% - 30rem);
+      }
+
+      .chat {
+        width: 30rem;
+        padding-left: 1px;
+      }
     }
 
     .info {
