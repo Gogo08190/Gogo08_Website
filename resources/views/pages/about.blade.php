@@ -35,7 +35,7 @@
 		</div>
 	</section>
 
-	<section id="faq wow bounceInLeft">
+	<section id="faq" class="wow bounceInLeft">
 		<div class="uk-container uk-container-xsmall">
 
 			<div class="title uk-text-center">
@@ -46,7 +46,7 @@
 		</div>
 	</section>
 
-	<section id="partenaires wow bounceInUp">
+	<section id="partenaires" class="wow bounceInUp">
 		<div class="uk-container uk-container-xsmall uk-text-center">
 			<div class="title">
 				<h2><span>{!! $titre_partenaire !!}</span></h2>
