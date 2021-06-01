@@ -1,7 +1,5 @@
 @extends('layouts.main')
 
-@endsection
-
 @section('content')
 	<section id="top">
 		<div class="uk-container uk-text-center">
@@ -72,6 +70,4 @@
 			</div>
 		</div>
 	</section>
-@endsection
-
 @endsection
