@@ -20,6 +20,18 @@
 		<script src="https://kit.fontawesome.com/791da63d6e.js" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		@yield('javascriptheader')
+
+		<script>
+			window.axeptioSettings = {
+			  clientId: "60b5f90da6f7827b673b4137",
+			};
+			 
+			(function(d, s) {
+			  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+			  e.async = true; e.src = "//static.axept.io/sdk.js";
+			  t.parentNode.insertBefore(e, t);
+			})(document, "script");
+		</script>
 	</head>
 
 	<body>
