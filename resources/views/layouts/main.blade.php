@@ -24,6 +24,7 @@
 		<script>
 			window.axeptioSettings = {
 			  clientId: "60b5f90da6f7827b673b4137",
+			  cookiesVersion: "gogo08-base",
 			};
 			 
 			(function(d, s) {
