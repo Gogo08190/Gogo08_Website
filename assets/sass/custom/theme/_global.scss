@@ -25,24 +25,10 @@ html, body {
 }
 
 #wrapper {
-  position: absolute;
-  width: 1920px;
   transform-origin: top left;
   opacity: 0;
   visibility: hidden;
   transition: $transition;
-}
-
-#wrapper {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-
-
-  main {
-    flex-grow: 1;
-  }
 }
 
 /* Let's get this party started */
@@ -65,8 +51,17 @@ html, body {
 	background: $dark_turquoise;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a:focus {
   outline:0 !important;
+}
+
+#wrapper {
+  position: relative;
+  height: 100%;
 }
 
 .sst-status-wrapper {
@@ -88,7 +83,7 @@ a:focus {
 }
 
 .pace-done {
-  #wrapper, header#page-header, {
+  #wrapper, header#page-header, #phone, #social {
     opacity: 1 !important;
     visibility: visible;
   }
