@@ -7,16 +7,16 @@
 @section('content')
 	<section id="top">
 		<div class="uk-container uk-text-center">
-			<div class="title animate__animated animate__bounceInLeft">
+			<div class="title wow bounceInUp">
 				<h1><span>{!! $titre !!}</span></h1>
 			</div>
-			<div class="twitch_player animate__animated animate__bounceInRight">
+			<div class="twitch_player wow bounceInRight">
 				<iframe src="https://player.twitch.tv/?channel=gogo08190&parent=gogo08.fr" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="742"></iframe>
 				<iframe title="chat" id="stream-chat" height="500" width="350" style="border: none;" src="https://www.twitch.tv/embed/gogo08190/chat?darkpopout&parent=gogo08.fr"></iframe>
 			</div>
-			<div class="info animate__animated animate__bounceInLeft">
+			<div class="info wow bounceInLeft">
 				<p>{!! $twitch_desc !!}</p>
-				<div class="uk-flex-center uk-child-width-1-4@m uk-child-width-1-4@s uk-text-center animate__animated animate__bounceInRight" data-uk-grid>
+				<div class="uk-flex-center uk-child-width-1-4@m uk-child-width-1-4@s uk-text-center wow bounceInUp" data-uk-grid>
 					<div>
 						<div class="button">
 							<a class="uk-button uk-button-default" target="_blank" href="{{ $twitch_url }}">S'abonnez <i class="fas fa-chevron-right"></i></a>
@@ -34,7 +34,7 @@
 		</div>
 	</section>
 
-	<section id="modo" data-aos="fade-right">
+	<section id="modo" class="wow bounceInLeft">
 		<div class="uk-container uk-text-center">
 			<div class="title">
 				<h2><span>{!! $titre_team !!}</span></h2>
@@ -68,7 +68,7 @@
 		</div>
 	</section>
 
-	<section id="partenaires">
+	<section id="partenaires" class="wow bounceInUp">
 		<div class="uk-container uk-container-xsmall uk-text-center">
 			<div class="title">
 				<h2><span>{!! $titre_partenaire !!}</span></h2>
@@ -96,12 +96,4 @@
 			</div>
 		</div>
 	</section>
-@endsection
-
-@section('javascript')
-
-<script>
-    AOS.init();
-</script>
-
 @endsection

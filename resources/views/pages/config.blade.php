@@ -7,7 +7,7 @@
 @section('content')
 	<section id="top">
 		<div class="uk-container">
-			<div class="title uk-text-center animate__animated animate__bounceInUp">
+			<div class="title uk-text-center wow bounceInUp">
 				<h1><span>{!! $titre !!}</span></h1>
 				<p>{!! $intro !!}</p>
 			</div>
@@ -18,7 +18,7 @@
 		<div class="uk-container">
 			<div class="uk-grid-match uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center" data-uk-grid>
 				<div>
-	        <div class="uk-card uk-card-default uk-card-body animate__animated animate__bounceInLeft">
+	        <div class="uk-card uk-card-default uk-card-body wow bounceInLeft">
 	            <h3 class="uk-card-title"><span>{!! $titre_pc !!}</span></h3>
 							<p><span><i class="icon-case-data"></i></span> {{ $boitier }}</p>
 							<p><span><i class="icon-battery-full"></i></span> {{ $alim }}</p>
@@ -33,7 +33,7 @@
 	        </div>
 		    </div>
 				<div>
-	        <div class="uk-card uk-card-default uk-card-body animate__animated animate__bounceInRight">
+	        <div class="uk-card uk-card-default uk-card-body wow bounceInRight">
 	            <h3 class="uk-card-title"><span>{!! $titre_hardware !!}</span></h3>
 	            <p><span><i class="fas fa-desktop"></i></span> {{ $screen }}</p>
 							<p><span><i class="icon-mouse"></i></span> {{ $souris }}</p>
@@ -50,7 +50,7 @@
 		</div>
 	<section>
 
-	<section id="partenaires">
+	<section id="partenaires wow bounceInUp">
 		<div class="uk-container uk-container-xsmall uk-text-center">
 			<div class="title">
 				<h2><span>{!! $titre_partenaire !!}</span></h2>

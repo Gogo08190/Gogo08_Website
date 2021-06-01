@@ -15,4 +15,5 @@ return [
   'about' => [__('A propos', THEME_TD), ['page']],
   'config' => [__('Config', THEME_TD), ['page']],
   'contact' => [__('Contact', THEME_TD), ['page']],
+  'mentions' => [__('Mentions Légales', THEME_TD), ['page']],
 ];

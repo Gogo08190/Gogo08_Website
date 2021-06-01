@@ -7,12 +7,12 @@
 @section('content')
 	<section id="top">
 		<div class="uk-container">
-			<div class="title uk-text-center animate__animated animate__bounceInRight">
+			<div class="title uk-text-center wow bounceInRight">
 				<h1><span>{!! $titre !!}</span></h1>
 				<p>{!! $intro_contact !!}</p>
 			</div>
 
-			<div class="uk-container uk-container-xsmall uk-text-center animate__animated animate__bounceInLeft">
+			<div class="uk-container uk-container-xsmall uk-text-center wow bounceInLeft">
 				<h3><span>Où directement sur les réseaux :<span></h3>
 				<div class="social uk-flex-center uk-child-width-1-5@m uk-child-width-1-5@s" data-uk-grid>
 					<div><a href="{!! get_option('th_discord') !!}" target="_blank" class="social_icon discord"><i class="fab fa-discord"></i></a></div>
@@ -24,7 +24,7 @@
 	</section>
 
 	<div id="contact">
-		<div class="form animate__animated animate__bounceInUp">
+		<div class="form wow bounceInUp">
 			<div class="uk-container">
 				{!! do_shortcode($contact_shortcode) !!}
 			</div>

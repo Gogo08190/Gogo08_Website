@@ -136,6 +136,8 @@
 #wrapper.about #top .about p,
 #wrapper.config #list_config .uk-card .uk-card-title,
 #wrapper.config #list_config .uk-card p,
+#wrapper.mentions #top .mention h4,
+#wrapper.mentions #top .mention p,
 #page-footer #copyright p,
 .title p,
 .list-modos .modos > div h3,
@@ -658,7 +660,7 @@ header#page-header #nav .uk-navbar-right a:hover {
 }
 
 #wrapper.video #playlist .list_playlist .button {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 #wrapper.video #partenaires {
@@ -921,6 +923,26 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 #wrapper.contact #top .social > div a:hover {
   color: #41D9AE;
+}
+
+/* Contact
+================================================ */
+
+#wrapper.mentions #top {
+  padding: 5rem 0;
+}
+
+#wrapper.mentions #top .mention {
+  padding: 5rem 0;
+}
+
+#wrapper.mentions #top .mention h4 {
+  font-size: 4rem;
+}
+
+#wrapper.mentions #top .mention p strong,
+#wrapper.mentions #top .mention p a {
+  color: #43D9BD;
 }
 
 /*  Page

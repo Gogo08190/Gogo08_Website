@@ -7,16 +7,16 @@
 @section('content')
 	<section id="top">
 		<div class="uk-container uk-text-center">
-			<div class="title animate__animated animate__bounceInUp">
+			<div class="title wow bounceInUp">
 				<h1><span>{!! $titre !!}</span></h1>
 			</div>
 
 			<div class="about">
 				<div class="uk-child-width-expand@s uk-text-center" data-uk-grid>
-					<div class="animate__animated animate__bounceInLeft">
+					<div class="wow bounceInLeft">
 						<img src="{{ wp_get_attachment_image_src($logo, 'logo')[0] }}" alt="Gogo08">
 					</div>
-					<div class="animate__animated animate__bounceInRight">
+					<div class="wow bounceInRight">
 						{!! $intro_about !!}
 
 						<div class="uk-container uk-container-xsmall uk-text-center">
@@ -35,7 +35,7 @@
 		</div>
 	</section>
 
-	<section id="faq">
+	<section id="faq wow bounceInLeft">
 		<div class="uk-container uk-container-xsmall">
 
 			<div class="title uk-text-center">
@@ -46,7 +46,7 @@
 		</div>
 	</section>
 
-	<section id="partenaires">
+	<section id="partenaires wow bounceInUp">
 		<div class="uk-container uk-container-xsmall uk-text-center">
 			<div class="title">
 				<h2><span>{!! $titre_partenaire !!}</span></h2>

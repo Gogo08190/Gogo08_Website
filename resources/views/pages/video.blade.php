@@ -5,19 +5,19 @@
 @endsection
 
 @section('content')
-	<section id="top" data-aos="fade-up">
+	<section id="top">
 		<div class="uk-container uk-text-center">
-			<div class="title animate__animated animate__bounceInRight">
+			<div class="title wow bounceInUp">
 				<h1><span>{!! $titre !!}</span></h1>
 			</div>
 
-			<div class="youtube_video animate__animated animate__bounceInLeft">
+			<div class="youtube_video wow bounceInLeft">
 				{!! do_shortcode($shortcode) !!}
 			</div>
 		</div>
 	</section>
 
-	<section id="playlist" data-aos="fade-left">
+	<section id="playlist wow bounceInRight">
 		<div class="uk-container uk-text-center">
 			<div class="title">
 				<h2><span>{!! $titre_playlist !!}</span></h2>
@@ -38,7 +38,7 @@
 		</div>
 	</section>
 
-	<section id="partenaires">
+	<section id="partenaires wow bounceInUp">
 		<div class="uk-container uk-container-xsmall uk-text-center">
 			<div class="title">
 				<h2><span>{!! $titre_partenaire !!}</span></h2>
@@ -69,9 +69,5 @@
 @endsection
 
 @section('javascript')
-
-<script>
-    AOS.init();
-</script>
 
 @endsection

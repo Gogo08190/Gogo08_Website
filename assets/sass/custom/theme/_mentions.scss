@@ -1,0 +1,25 @@
+/* Contact
+================================================ */
+
+#wrapper.mentions {
+  #top {
+    padding: 5rem 0;
+
+    .mention {
+      padding: 5rem 0;
+
+      h4 {
+        @extend %texte;
+        font-size: 4rem;
+      }
+
+      p {
+        @extend %texte;
+
+        strong, a {
+          color: $turquoise;
+        }
+      }
+    }
+  }
+}
