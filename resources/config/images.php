@@ -15,5 +15,5 @@
  *                            to the media custom field. If string, used as the display name ;)
  */
 return [
-    'partenaire' => [360, 120, false],
+    'partenaire' => [400, 160, false],
 ];
