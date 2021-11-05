@@ -1,0 +1,73 @@
+/* Actus
+================================================ */
+
+.actus {
+  justify-content: center;
+
+  .alm-reveal, .alm-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .actu_item {
+    margin: 5px;
+    width: 35rem;
+    border-radius: 20px;
+    transition: $transition;
+
+    &:hover {
+      box-shadow:0px 0px 20px $turquoise;
+    }
+
+    .article-item {
+      text-decoration: none;
+    }
+
+    .uk-card-media-top {
+      img {
+        width: 100%;
+        border-top-left-radius: 20px 20px;
+        border-top-right-radius: 20px 20px;
+      }
+    }
+
+    .uk-card-body {
+      background-color: $dark_turquoise;
+      padding: 0;
+      border-bottom-left-radius: 20px 20px;
+      border-bottom-right-radius: 20px 20px;
+      height: 17rem;
+      position: relative;
+
+      h2 {
+        @extend %title;
+        font-size: 1.5rem;
+        color: white;
+        max-width: 340px;
+        padding: 5px 10px 0;
+      }
+
+      p, span {
+        @extend %texte;
+        color: white;
+        font-size: 1.3rem;
+        max-width: 340px;
+        padding: 0 10px;
+      }
+
+      .link {
+        text-align: right;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+  }
+
+  .alm-btn-wrap {
+    display: none;
+  }
+}

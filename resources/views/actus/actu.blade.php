@@ -7,12 +7,16 @@
 				<h1><span>{!! $titre !!}</span></h1>
 				<p>{!! $desc !!}</p>
 			</div>
-
-			<div class="list_actu">
-				{!! do_shortcode($shortcode) !!}
-			</div>
 		</div>
 	</section>
+
+  <div id="actus">
+		<div class="uk-container">
+			<div class="actus uk-grid">
+					{!! do_shortcode($shortcode) !!}
+			</div>
+		</div>
+	</div>
 
 	<section id="partenaires" class="wow bounceInUp">
 		<div class="uk-container uk-container-xsmall uk-text-center">
