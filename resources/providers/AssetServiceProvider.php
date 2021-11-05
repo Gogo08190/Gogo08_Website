@@ -24,11 +24,11 @@ class AssetServiceProvider extends ServiceProvider
         $theme = $this->app->make('wp.theme');
 
         /* CSS */
-        Asset::add('theme_uikit_css', 'https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css', [], $theme->getHeader('version'))->to('front');
+        Asset::add('theme_uikit_css', 'https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/css/uikit.min.css', [], $theme->getHeader('version'))->to('front');
         Asset::add('theme_custom_css', 'css/custom.min.css', [], $theme->getHeader('version'))->to('front');
 
         /* JS */
-        Asset::add('theme_uikit_js', 'https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js', [], $theme->getHeader('version'))->to('front');
+        Asset::add('theme_uikit_js', 'https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/js/uikit.min.js', [], $theme->getHeader('version'))->to('front');
         Asset::add('theme_custom_js', 'js/custom.min.js', [], $theme->getHeader('version'))->to('front');
     }
 }

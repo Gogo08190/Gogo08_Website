@@ -17,7 +17,7 @@
 		@head
 		<script data-pace-options='{ "ajax": false, "eventLag": false }' src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/791da63d6e.js" crossorigin="anonymous"></script>
 		@yield('javascriptheader')
 
@@ -67,7 +67,7 @@
 		@footer
 		@yield('javascript')
 
-		<script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.15/dist/mailgo.min.js"></script>
+		<script src="https://unpkg.com/mailgo@0.12.2/dist/mailgo.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 		<script>
