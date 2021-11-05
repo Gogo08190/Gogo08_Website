@@ -63,6 +63,7 @@ header#page-header {
               font-weight: 500;
               max-width: 250px;
               display: inline-block;
+              transition: $transition;
 
               &:hover {
                 color: $turquoise;

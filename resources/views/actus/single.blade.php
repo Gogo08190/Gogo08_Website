@@ -1,10 +1,12 @@
 @extends('layouts.main')
 
 @section('content')
-	<section id="top">
+	<section id="top_actu">
 		<div class="uk-container uk-container-small">
 			<div class="uk-text-center">
-				<h1>{{ Loop::title() }}</h1>
+        <div class="title wow bounceInUp">
+  				<h1><span>{{ Loop::title() }}</span></h1>
+  			</div>
 			</div>
 		</div>
 	</section>
