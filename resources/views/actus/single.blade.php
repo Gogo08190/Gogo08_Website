@@ -15,7 +15,7 @@
 									$parentscategory .= "$category->name";
 								}
 							}
-							?>
+						?>
 			      <p class="uk-article-meta"><?php echo $parentscategory; ?> - {{ Loop::date('j F Y') }}</p>
 			    </div>
   			</div>
