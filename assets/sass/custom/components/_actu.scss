@@ -129,6 +129,14 @@
           color: $turquoise;
         }
       }
+
+      .button {
+        padding: 5rem 0 0;
+        text-align: center;
+        .uk-button {
+          @extend %button;
+        }
+      }
     }
   }
 }

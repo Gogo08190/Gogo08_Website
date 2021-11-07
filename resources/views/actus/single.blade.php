@@ -36,6 +36,10 @@
         <a target="_blank" class="share-button share-twitter" href="https://twitter.com/intent/tweet?url=<?php echo $postUrl; ?>&text=<?php echo the_title(); ?>&via=<?php the_author_meta( 'twitter' ); ?>" title="Tweet this"><i class="fab fa-twitter"></i></a>
         <a target="_blank" class="share-button share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $postUrl; ?>" title="Share on Facebook"><i class="fab fa-facebook"></i></a>
       </div>
+
+			<div class="button">
+				<a class="uk-button uk-button-default" href="/blog/">Voir les autres articles <i class="fas fa-chevron-right"></i></a>
+			</div>
     </div>
 
 	</div>
