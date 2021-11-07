@@ -6,6 +6,18 @@
 			<div class="uk-text-center">
         <div class="title wow bounceInUp">
   				<h1><span>{{ Loop::title() }}</span></h1>
+					<div class="top">
+						<?php
+							$parentscategory ="";
+							$parentscategory_id ="";
+							foreach((get_the_category()) as $category) {
+								if ($category->category_parent == 0) {
+									$parentscategory .= "$category->name";
+								}
+							}
+							?>
+			      <p class="uk-article-meta"><?php echo $parentscategory; ?> - {{ Loop::date('j F Y') }}</p>
+			    </div>
   			</div>
 			</div>
 		</div>
@@ -18,10 +30,6 @@
 
     <div class="uk-container share uk-text-center">
       <?php
-      /* Social Share Buttons template for Wordpress
-       * By Daan van den Bergh
-       */
-
       $postUrl = 'http' . ( isset( $_SERVER['HTTPS'] ) ? 's' : '' ) . '://' . "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}"; ?>
 
       <div class="share-button-wrapper">
