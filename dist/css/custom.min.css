@@ -151,7 +151,8 @@ form .uk-text-center,
 #wrapper.base #actu .info ol li,
 #wrapper.base #actu .share span,
 .actus .actu_item .uk-card-body p,
-.actus .actu_item .uk-card-body span {
+.actus .actu_item .uk-card-body span,
+.actus .actu_item .tag p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   color: white;
@@ -1623,6 +1624,10 @@ form .uk-text-center {
   text-decoration: none;
 }
 
+.actus .actu_item .uk-card-media-top {
+  position: relative;
+}
+
 .actus .actu_item .uk-card-media-top img {
   width: 100%;
   border-top-left-radius: 20px 20px;
@@ -1658,6 +1663,24 @@ form .uk-text-center {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+.actus .actu_item .tag {
+  position: absolute;
+  padding-bottom: 1rem;
+  left: 0;
+  top: 2rem;
+}
+
+.actus .actu_item .tag p {
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  background: #43D9BD;
+  padding: .1rem 2rem .2rem 2rem;
+  border-top-right-radius: 2rem 2rem;
+  border-bottom-right-radius: 20px 20px;
+  text-align: center;
 }
 
 .actus .alm-btn-wrap {
