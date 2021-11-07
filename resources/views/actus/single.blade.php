@@ -9,7 +9,6 @@
 					<div class="top">
 						<?php
 							$parentscategory ="";
-							$parentscategory_id ="";
 							foreach((get_the_category()) as $category) {
 								if ($category->category_parent == 0) {
 									$parentscategory .= "$category->name";
