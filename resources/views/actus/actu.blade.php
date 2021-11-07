@@ -10,7 +10,7 @@
 		</div>
 	</section>
 
-  <div id="actus">
+  <div id="actus" class="wow bounceInLeft">
 		<div class="uk-container">
 			<div class="actus uk-grid">
 					{!! do_shortcode($shortcode) !!}
