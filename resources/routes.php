@@ -15,6 +15,7 @@ Route::get('template', ['config', 'uses' => 'ConfigController@index']);
 Route::get('template', ['actu', 'uses' => 'ActuController@index']);
 Route::get('template', ['contact', 'uses' => 'ContactController@index']);
 Route::get('template', ['mentions', 'uses' => 'MentionsController@index']);
+Route::get('template', ['roulette', 'uses' => 'RouletteController@index']);
 Route::get('404', ['404', 'uses' => 'ErrorController@index']);
 
 Route::get('single', function(){ return View::make('actus.single'); });

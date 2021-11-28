@@ -1,0 +1,131 @@
+/* Contact
+================================================ */
+
+#wrapper.roulette {
+
+  header, footer {
+    display: none;
+  }
+
+  #top {
+    padding: 5rem 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    .uk-container {
+      .roulette {
+        margin:0;
+      	padding:0;
+      	display:flex;
+      	align-items:center;
+      	justify-content: center;
+      	height:100vh;
+      	overflow:hidden;
+      }
+    }
+
+    .container {
+      width: 470px;
+      height: 470px;
+      background-color: $dark;
+      border-radius: 50%;
+      border: 15px solid $turquoise;
+      box-shadow:0px 0px 7px $turquoise;
+      position: relative;
+      overflow: hidden;
+      transition: 5s;
+
+      >div {
+        height: 50%;
+        width: 200px;
+        position: absolute;
+        clip-path: polygon(100% 0, 50% 100%, 0 0);
+        transform: translateX(-50%);
+        transform-origin: bottom;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        left: 135px;
+      }
+
+      .one {
+        background-color: $dark_turquoise;
+        left: 50%;
+      }
+
+      .two {
+        background-color: $light_turquoise;
+        transform: rotate(45deg);
+      }
+
+      .three {
+        background-color: $dark_turquoise;
+        transform: rotate(90deg);
+      }
+
+      .four {
+        background-color: $light_turquoise;
+        transform: rotate(135deg);
+      }
+
+      .five {
+        background-color: $dark_turquoise;
+        transform: rotate(180deg);
+      }
+
+      .six {
+        background-color: $light_turquoise;
+        transform: rotate(225deg);
+      }
+
+      .seven {
+        background-color: $dark_turquoise;
+        transform: rotate(270deg);
+      }
+
+      .eight {
+        background-color: $light_turquoise;
+        transform: rotate(315deg);
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $turquoise;
+
+      &::before {
+        content:"\1F817";
+	      font-size:50px;
+      }
+    }
+
+    #spin{
+    	position: absolute;
+    	top:65%;
+    	left:50%;
+    	transform:translate(-50%,-50%);
+    	z-index:10;
+    	background-color: #e2e2e2;
+    	text-transform: uppercase;
+    	border:8px solid #fff;
+    	font-weight:bold;
+    	font-size:20px;
+    	color:#a2a2a2;
+    	width: 80px;
+    	height:80px;
+    	font-family: sans-serif;
+    	border-radius:50%;
+    	cursor: pointer;
+    	outline:none;
+    	letter-spacing: 1px;
+    }
+  }
+}
