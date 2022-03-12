@@ -50,14 +50,11 @@
 
 @section('javascript')
 
-	<script src="{{ plugins_url() }}/ajax-load-more-filters/dist/js/filters.min.js"></script>
 	<script>
 	/* <![CDATA[ */
 	var alm_localize = {"ajaxurl":"{{ get_home_url() }}/cms/wp-admin/admin-ajax.php","alm_nonce":"{{ wp_create_nonce('ajax_load_more_nonce') }}","pluginurl":"{{ plugins_url() }}/ajax-load-more","scrolltop":"false","speed":"200","ga_debug":"false","results_text":"Viewing {post_count} of {total_posts} results.","no_results_text":"No results found.","alm_debug":""};
 	var ajax_load_more_1_vars = {"id":"1"};
 	/* ]]> */
 	</script>
-
-	<script src="{{ plugins_url() }}/ajax-load-more/core/dist/js/ajax-load-more.min.js"></script>
 
 @endsection
